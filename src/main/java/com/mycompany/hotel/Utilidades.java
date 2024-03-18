@@ -327,7 +327,6 @@ public class Utilidades {
         String tipo;
         int numeroCamas;
         double costePorDia;
-        
 
         if (habitaciones.isEmpty()) {
             System.out.println("No hay habitaciones para mostrar...");
@@ -341,6 +340,67 @@ public class Utilidades {
                 System.out.println("");
             }
         }
+    }
+
+    public static void variables() {
+
+        Scanner sca = new Scanner(System.in);
+        ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+        ArrayList<Empleado> empleados = new ArrayList<Empleado>();
+        ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
+
+        Cliente cliente = null;
+        Empleado empleado = null;
+        Habitacion habitación = null;
+        int idCliente;
+        int idEmpleado;
+        String nombre;
+        String apellidos;
+        String DNI;
+        int numeroTelefono;
+        int idHabitacion;
+        String tipo;
+        int numeroCamas;
+        double costePorDia;
+
+        int opcion = 10;
+    }
+
+    public static void lista() {
+
+        Scanner sca = new Scanner(System.in);
+        ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+        ArrayList<Empleado> empleados = new ArrayList<Empleado>();
+        ArrayList<Habitacion> habitaciones = new ArrayList<Habitacion>();
+
+        Cliente cliente = null;
+        Empleado empleado = null;
+        Habitacion habitación = null;
+        int idCliente;
+        int idEmpleado;
+        String nombre;
+        String apellidos;
+        String DNI;
+        int numeroTelefono;
+        int idHabitacion;
+        String tipo;
+        int numeroCamas;
+        double costePorDia;
+
+        int opcion = 10;
+        System.out.println("1. Registrar cliente.");
+        System.out.println("2. Dar de baja a un cliente.");
+        System.out.println("3. Registrar empleado.");
+        System.out.println("4. Dar de baja a un empleado.");
+        System.out.println("5. Agregar nueva habitación.");
+        System.out.println("6. Eliminar una habitación.");
+        System.out.println("7. Mostrar todos los clientes.");
+        System.out.println("8. Mostrar todos los empleados.");
+        System.out.println("9. Mostrar todas las habitaciones.");
+        System.out.println("10. Salir del programa.");
+        System.out.println("Introduce el número de la opcion deseada: ");
+
+        opcion = sca.nextInt();
     }
 
 }
